@@ -7,7 +7,6 @@
     <title>PCMS|Staff</title>
 
     <link rel="stylesheet" href="./css/home.css">
-
     <link rel="stylesheet" href="./css/dashboard.css">
     <link rel="stylesheet" href="./css/newEntry.css">
     <link rel="stylesheet" href="./css/criminal.css">
@@ -18,17 +17,13 @@
 </head>
 
 <body>
-
     <div class="popup" id="popup">
-
         <div class="popup-window">
             <div class="popup-header">
-                
                 <div class="popup-tittle">
-                <h2>EDIT INFORMATION</h2>
+                    <h2>EDIT INFORMATION</h2>
                 </div>
                 <div class="plus-sign" id="closebtn">&plus;</div>
-    
             </div>
             <div class="update-form">
                 <form action="#" method="post">
@@ -38,7 +33,6 @@
                         </div>
                         <div>
                             <section>
-    
                                 <label for="firstName">First Name:</label>
                                 <input type="text" id="firstName" name="firstName" required>
                             </section>
@@ -52,24 +46,21 @@
                                 <label for="dob">Date of Birth:</label>
                                 <input type="date" id="dob" name="dob" required>
                             </section>
-    
                             <section>
                                 <label for="gender">Gender:</label>
                                 <select id="gender" name="gender" required>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </section>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                            </select>
                         </div>
                         <div>
                             <section>
                                 <label for="nationality">Nationality:</label>
                                 <input type="text" id="nationality" name="nationality" required>
                             </section>
-    
                             <section>
-    
                                 <label for="address">Address:</label>
                                 <input type="text" id="address" name="address" required>
                             </section>
@@ -78,10 +69,8 @@
                             <section>
                                 <label for="Next-of-kin">Next of kin:</label>
                                 <input type="text" id="Next-of-kin" name="Next-of-kin" required>
-    
                             </section>
                             <section>
-    
                                 <label for="Next-of-kin-contact">Next of kin contact:</label>
                                 <input type="text" id="Next-of-kin-contact" name="Next-of-kin-contact" required>
                             </section>
@@ -93,32 +82,24 @@
                         </div>
                         <div>
                             <section>
-    
                                 <label for="crimeType">Crime Type:</label>
                                 <input type="text" id="crimeType" name="crimeType" required>
                             </section>
                             <section>
-    
                                 <label for="crimeDate">Date of Crime:</label>
                                 <input type="date" id="crimeDate" name="crimeDate" required>
                             </section>
                         </div>
-    
                         <div>
                             <section>
-    
                                 <label for="arrestDate">Date of Arrest:</label>
                                 <input type="date" id="arrestDate" name="arrestDate" required>
                             </section>
                             <section>
-    
                                 <label for="arrest-officer">Arrest officer:</label>
-    
                                 <select name="arrest-officer" id="arrest-officer">
-                                    <option value=""> Nayebare Sam(10987)</option>
-                                    <option value="">Arinda Peter(10567)</option>
-                                    <option value=""></option>
-    
+                                    <option value="Nayebare Sam(10987)">Nayebare Sam(10987)</option>
+                                    <option value="Arinda Peter(10567)">Arinda Peter(10567)</option>
                                 </select>
                             </section>
                         </div>
@@ -127,11 +108,9 @@
                         </div>
                     </div>
                 </form>
-    
             </div>
         </div>
     </div>
-
 
     <header>
         <div class="logo-content">
@@ -143,10 +122,8 @@
             </div>
         </div>
         <div class="brand-content">
-            <button class="logout-button">logout
-            </button>
+            <button class="logout-button">logout</button>
         </div>
-
     </header>
     <main>
         <div class="side-bar">
@@ -185,14 +162,11 @@
                             <h2>Staff</h2>
                         </li>
                     </a>
-
                 </ul>
             </div>
         </div>
         <div class="content-area">
-
             <div class="body-area">
-
                 <div class="body-area-tittle">
                     <div class="tittle">
                         <h2>Staff</h2>
@@ -209,7 +183,6 @@
                     <div class="form-heading">
                         <h1>Staff</h1>
                     </div>
-
                     <div class="display-prisoners">
                         <table>
                             <thead>
@@ -220,7 +193,6 @@
                                 <th>Arrest Officer</th>
                                 <th>Nok</th>
                                 <th>actions</th>
-
                             </thead>
                             <tbody>
                                 <tr>
@@ -233,8 +205,6 @@
                                     <td>
                                         <button class="edit-button">edit</button>
                                         <button class="delete-button">delete</button>
-                                       
-                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -247,8 +217,6 @@
                                     <td>
                                         <button class="edit-button">edit</button>
                                         <button class="delete-button">delete</button>
-                                       
-                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -261,37 +229,22 @@
                                     <td>
                                         <button class="edit-button">edit</button>
                                         <button class="delete-button">delete</button>
-                                       
-                                        
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
-
                     </div>
-
-
-
-
-
                 </div>
-
-
-
-
             </div>
 
             <footer>
                 &copy;Copyright
-                <script>document.write(new Date().getFullYear());</script>,Twijukye James
+                <script>document.write(new Date().getFullYear());</script>, Twijukye James
             </footer>
         </div>
     </main>
 
-
-
     <script src="./js/popup.js"></script>
-
 </body>
 
 </html>

@@ -4,15 +4,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PCMS</title>
+    <title>PCMS|Prisoners</title>
 
     <link rel="stylesheet" href="./css/home.css">
+
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="./css/newEntry.css">
+    <link rel="stylesheet" href="./css/criminal.css">
+    <link rel="stylesheet" href="./css/popup.css">
+
 
     <script src="./js/home.js"></script>
 
 </head>
 
-<body>
+<body> 
+    <div class="popup" id="popup">
+
+    <div class="popup-window">
+        <div class="popup-header">
+            
+            <div class="popup-tittle">
+            <h2>EDIT INFORMATION</h2>
+            </div>
+            <div class="plus-sign" id="closebtn">&plus;</div>
+
+        </div>
+        <div class="update-form">
+            <form action="#" method="post">
+                <div class="personal-info">
+                    <div>
+                        <h3>Personal Information</h3>
+                    </div>
+                    <div>
+                        <section>
+
+                            <label for="firstName">First Name:</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </section>
+                        <section>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <label for="dob">Date of Birth:</label>
+                            <input type="date" id="dob" name="dob" required>
+                        </section>
+
+                        <section>
+                            <label for="gender">Gender:</label>
+                            <select id="gender" name="gender" required>
+                        </section>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <section>
+                            <label for="nationality">Nationality:</label>
+                            <input type="text" id="nationality" name="nationality" required>
+                        </section>
+
+                        <section>
+
+                            <label for="address">Address:</label>
+                            <input type="text" id="address" name="address" required>
+                        </section>
+                    </div>
+                    <div>
+                        <section>
+                            <label for="Next-of-kin">Next of kin:</label>
+                            <input type="text" id="Next-of-kin" name="Next-of-kin" required>
+
+                        </section>
+                        <section>
+
+                            <label for="Next-of-kin-contact">Next of kin contact:</label>
+                            <input type="text" id="Next-of-kin-contact" name="Next-of-kin-contact" required>
+                        </section>
+                    </div>
+                </div>
+                <div class="crime-info">
+                    <div>
+                        <h3>Crime Information</h3>
+                    </div>
+                    <div>
+                        <section>
+
+                            <label for="crimeType">Crime Type:</label>
+                            <input type="text" id="crimeType" name="crimeType" required>
+                        </section>
+                        <section>
+
+                            <label for="crimeDate">Date of Crime:</label>
+                            <input type="date" id="crimeDate" name="crimeDate" required>
+                        </section>
+                    </div>
+
+                    <div>
+                        <section>
+
+                            <label for="arrestDate">Date of Arrest:</label>
+                            <input type="date" id="arrestDate" name="arrestDate" required>
+                        </section>
+                        <section>
+
+                            <label for="arrest-officer">Arrest officer:</label>
+
+                            <select name="arrest-officer" id="arrest-officer">
+                                <option value=""> Nayebare Sam(10987)</option>
+                                <option value="">Arinda Peter(10567)</option>
+                                <option value=""></option>
+
+                            </select>
+                        </section>
+                    </div>
+                    <div>
+                        <button type="submit">Update</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
+
 
 
     <header>
@@ -43,30 +162,126 @@
 
             <div class="side-bar-menu">
                 <ul>
-                    <a href="">
+                    <a href="dashboard.html">
                         <li id="active">
                             <img src="./assets/icons/icons8-dashboard-48 (1).png" alt="">
                             <h2>Dashboard</h2>
                         </li>
                     </a>
-                    <a href="">
+                    <a href="criminals.html">
                         <li>
-                            <img src="./assets/icons/icons8-criminal-64.png" alt="">
-                            <h2>Criminals</h2>
+                            <img src="./assets/icons/icons8-dashboard-48 (1).png" alt="">
+                            <h2>Prisoners</h2>
                         </li>
                     </a>
-                    <a href="">
+                    <a href="newEntry.html">
+                        <li id="active">
+                            <img src="./assets/icons/icons8-dashboard-48 (1).png" alt="">
+                            <h2>newEntry</h2>
+                        </li>
+                    </a>
+                    <a href="staff.html">
                         <li>
                             <img src="./assets/icons/icons8-staff-50.png" alt="">
                             <h2>Staff</h2>
                         </li>
                     </a>
-                   
+
                 </ul>
             </div>
         </div>
         <div class="content-area">
-            <div class="body-area"></div>
+
+            <div class="body-area">
+
+                <div class="body-area-tittle">
+                    <div class="tittle">
+                        <h2>Prisoners</h2>
+                    </div>
+                    <div class="thumb-path">
+                        <img src="./assets/icons/icons8-dashboard-48 (3).png" alt="">
+                        > <p><a href="">Prisoners</a></p>
+                    </div>
+                </div>
+                <div class="body-area-notification">
+                    <p>This is a notification</p>
+                </div>
+                <div class="form">
+                    <div class="form-heading">
+                        <h1>PRISONERS</h1>
+                    </div>
+
+                    <div class="display-prisoners">
+                        <table>
+                            <thead>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Crime</th>
+                                <th>Arrest Officer</th>
+                                <th>Nok</th>
+                                <th>actions</th>
+
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>none</td>
+                                    <td>jim</td>
+                                    <td>124</td>
+                                    <td>dev</td>
+                                    <td>moze</td>
+                                    <td>thde</td>
+                                    <td>
+                                        <button class="edit-button" id="editButton">edit</button>
+                                        <button class="delete-button">delete</button>
+                                       
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>none</td>
+                                    <td>jim</td>
+                                    <td>124</td>
+                                    <td>dev</td>
+                                    <td>moze</td>
+                                    <td>thde</td>
+                                    <td>
+                                        <button class="edit-button">edit</button>
+                                        <button class="delete-button">delete</button>
+                                       
+                                        
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>none</td>
+                                    <td>jim</td>
+                                    <td>124</td>
+                                    <td>dev</td>
+                                    <td>moze</td>
+                                    <td>thde</td>
+                                    <td>
+                                        <button class="edit-button">edit</button>
+                                        <button class="delete-button">delete</button>
+                                       
+                                        
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
             <footer>
                 &copy;Copyright
                 <script>document.write(new Date().getFullYear());</script>,Twijukye James
@@ -76,7 +291,7 @@
 
 
 
-
+    <script src="./js/popup.js"></script>
 
 </body>
 

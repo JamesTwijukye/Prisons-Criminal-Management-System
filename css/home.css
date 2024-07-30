@@ -241,10 +241,13 @@ main {
 
 .body-area {
 
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 235, 235);
     height: 94%;
     width: 100%;
-    overflow-y: scroll;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: blue white;
+    padding: 15px;
 }
 
 footer {

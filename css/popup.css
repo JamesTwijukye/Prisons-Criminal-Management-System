@@ -1,0 +1,168 @@
+body {
+
+    /* background-color: black; */
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.popup {
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #00000050;
+
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999999;
+}
+
+
+
+.popup-window {
+    background-color: beige;
+    width: 50vw;
+    height: 50vh;
+    border-radius: 11px;
+    box-shadow: 0 0 10px #9d9d9dcf;
+    padding: 10px;
+    max-width: 600px;
+    max-height: 90%;
+    border-bottom: 10px solid #007bff;;
+
+
+}
+
+.popup-header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 6%;
+    background-color: #f0f0f0;
+    border-radius: 11px;
+}
+
+.popup-window .personal-info select input,
+.popup-window .crime-info select input {
+    width: 50%; /* Ensure the select fits the form section */
+}
+
+.plus-sign {
+    transform: rotate(45deg);
+    font-size: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+    user-select: none;
+
+}
+
+.plus-sign:hover {
+    color: red;
+    zoom: 110%;
+}
+
+.popup-header .popup-tittle {
+    display: flex;
+    font-size: 10px;
+    font-family: sans-serif;
+    color: #2a2a2a5d;
+    padding-left: 5px;
+
+}
+
+.update-form form {
+    height: 80%;
+}
+
+.update-form form {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.personal-info div {
+    /* background-color: aqua; */
+    display: flex;
+    flex: row;
+    margin: 5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.personal-info div section {
+    /* background-color: yellow; */
+    width: 50%;
+    height: 15%;
+
+}
+
+.personal-info div section input {
+    width: 120px;
+
+
+}
+
+.crime-info div {
+    /* background-color: aqua; */
+    display: flex;
+    flex: row;
+    margin: 5px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.crime-info div section {
+    margin-top: 6px;
+    width: 50%;
+    height: 15%;
+
+
+}
+
+.crime-info div section input {
+    width: 120px;
+
+
+}
+
+.crime-info div button {
+    margin-top: 12px;
+    padding: 10px;
+    background-color: #007bff; 
+
+    color: white;
+    /* height: 40%; */
+    width: 80%;
+    border-radius: 8px;
+    border: 1px solid burlywood;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+#gender {
+    width: 125px; 
+}
+
+
+#arrest-officer {
+    width: 125px; 
+}
